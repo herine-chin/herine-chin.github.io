@@ -1,0 +1,50 @@
+header {
+	width: 100%;
+	height: 130px;
+	border-bottom: 6px dotted gray;
+}
+
+h1 {
+	position: relative;
+	left: 210px;
+}
+
+#headimage {
+	position: relative;
+	bottom: 110px
+}
+
+body {
+	width: 90%;
+}
+
+section {
+	position: relative;
+	left: 170px;
+	text-align: center;
+	width: 75%;
+	border-left: 6px dotted gray;
+	padding-left: 20px
+}
+
+p {
+	font-size: 18px
+}
+
+.images {
+	width: 400px;
+	height: auto;
+	border: 3px solid gray;
+	padding: 3px
+}
+
+aside {
+	position: absolute;
+	top: 180px;
+	width: 170px;
+}
+
+footer {
+	clear: both;
+	border-top: 6px dotted gray;
+}
