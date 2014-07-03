@@ -5,22 +5,18 @@ header {
 }
 
 h1 {
-	position: relative;
-	left: 210px;
+	display: inline-block;
 }
 
 #headimage {
-	position: relative;
-	bottom: 110px
+	float: left
 }
 
 body {
-	width: 90%;
 }
 
 section {
-	position: relative;
-	left: 170px;
+	float: left;
 	text-align: center;
 	width: 75%;
 	border-left: 6px dotted gray;
@@ -39,8 +35,7 @@ p {
 }
 
 aside {
-	position: absolute;
-	top: 180px;
+	float: left;
 	width: 170px;
 }
 
