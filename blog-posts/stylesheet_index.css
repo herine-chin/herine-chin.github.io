@@ -1,0 +1,234 @@
+     /**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+
+ /* Custom */
+
+body {
+    width: 100%;
+    background: #0D9699;
+    font-family: rockwell;
+}
+
+header{
+}
+
+#selfimage{
+    width: 100%;
+    height: auto;
+    border-top: 2em solid #333333;
+    border-bottom: 2em solid #333333;
+    box-shadow: 0 0 .75em #000000
+}
+
+ul{
+    list-style: none;
+    position: relative;
+    margin: 0 auto
+}
+
+ul li {
+    float: left;
+    text-align: center;
+    width: 18%;
+    padding: 1% .5% 1% .5%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin: .5% 0% 0% .75%;
+    background: #333333;
+    box-shadow: 0 0 .75em #000000
+}
+
+ul li a {
+    font-size: 1em;
+    color: #CACBCB;
+    text-decoration: none;
+}
+
+#technical {}
+#cultural {}
+#misc {}
+
+#all_blogs {
+    display: none
+}
+
+.clear  {
+    clear: both
+}
+
+section {
+}
+
+#container {
+    position: relative;
+}
+
+#line1, #line2, #name, #tagline {
+    position: absolute;
+}
+
+#line1 {    
+    border-top: .25em dashed #9FD663;
+    top: 26%;
+    right: 0%;
+    width: 45%;
+}
+
+
+#line2 {
+    bottom: 40%;
+    width: 35%;
+    border-bottom: .25em dashed #9FD663;
+}
+
+#name {
+    font-size: 2em;
+    top: 26%;
+    right: 45%;
+    padding: 1%;
+    display: inline;
+    background: rgba(159,214,99, 0.7);
+    border-radius: .5em 0 .5em .5em;
+}
+
+#tagline {
+    bottom: 40%;
+    left: 35%;
+    font-size: 1.75em;
+    padding: 1%;
+    background: rgba(159,214,99,0.7);
+    border-radius: .5em .5em .5em 0;
+}
+
+#name, #tagline {
+    color: white;
+}
+
+#about {
+    margin-top: 1%;
+}
+
+h3 {
+    float: left;
+    text-align: center;
+    color: white;
+    width: 15%;
+    padding: 1em;
+    background: #9FD663;
+    border-radius: .5em;
+    margin-left: 1%
+}
+
+
+p {
+    width: 75%;
+    float: left;
+    padding-left: 1%
+}
+
+a#active { 
+    color: white; 
+}
+
+/* Narrow 720 */
+
+@media only screen and (max-width: 720px) {
+
+      ul li {
+        float: none;
+        margin: 0;
+        width: 99%;
+        border-radius: 0;
+        padding: none;
+  }
+     #tagline, #line1, #line2, #technical, #cultural, #misc {
+        display: none;
+  }
+
+     #all_blogs {
+        display: block
+  }
+
+    #name {
+        width: 98%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        border-radius: 0
+    }
+
+    #selfimage {
+        border: 0;
+        box-shadow: none;
+    }
+
+    #about{
+        margin-top: 0;
+    }
+
+    h3 {
+        border-radius: 0;
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 0
+    }
+
+    p {
+        width: 98%;
+        text-align: center;
+        padding-top: 1%
+    }
+}
+
+
+
+
+
+
+
