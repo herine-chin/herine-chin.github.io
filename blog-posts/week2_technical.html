@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Herine Chin| DBC Technical Blog.</title>
+		<title>Herine Chin| You Want It Where? CSS Positions.</title>
 		<link href="blog_template.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
 		<header>
 			<ul>
-				<li><a id="active" href"#">Home</a></li>
-				<li id="technical"><a href"#">Technical Blog</a></li>
-				<li id="cultural"><a href"#">Cultural Blog</a></li>
-				<li id="misc"><a href"#">Misc Blog</a></li>
-				<li id="all_blogs"><a href"#">Blogs</a></li>
+				<li><a href="http://herine-chin.github.io/index">Home</a></li>
+				<li><a id="blog" href="#">Blog</a>
+					<ul>
+						<li id="hover"><a id="moreposts" href="#allposts">More posts</a></li> 
+					</ul>
+				</li>
 				<li><a href="mailto:herine.chin@gmail.com">Contact Me</a></li>
 			</ul>
+
+			<div>
+
+			</div>
 
 			<div id="header_line">
 			</div>
@@ -23,29 +28,49 @@
 					<h2 id="blog_date">July 6, 2014</h2>
 				</div>
 		</header>
+
 		<section>
 			<div class="blog_entry">
-			<h3>Static and Fixed Positions</h3>
+			<h3>Static and Fixed Positions</h3>	
 			<p class="text">Let's start with the easy stuff. Static is the default position of your html elements. If you don't specify the position, they would just stack on top of each other.<br><br>Fixed position is just as the name implies, it is basically stays where you tell it to, whether it be in the middle of the right side with {position: fixed; right: 0; top: 50%;} or at the bottom with {position:fixed; bottom: 0;}. Please keep in mind that it is fixed relative to the browser so you can't scroll away from it. You can do fun things with this position such as adding a wood graphic border on all 4 sides so it's like you're looking through a window frame.</p>
 			<img class="image" src="images/static_position.png">
 			</div>
+
 			<div class="blog_entry">
 			<h3>Relative Position</h3>
 			<p class="text">Relative position doesn't seem like much in the beginning because it acts just like static. That is until you give it some directions then boom, magic! The picture illustrates how the "main" section was set to relative and then told to move down and to the right with {position:relative; top:"some # of units"; left: "some # of units". One important thing to notice is that the original space occupied by the "main" section is still taking up space in the layout.</p>
 			<img class="image" src="images/relative_position.png">
 			</div>
-			<div class="blog_entry">
+		</section>
+
+					<div class="blog_entry">
 			<h3>Absolute Position</h3>
 			<p class="text">Absolute position is similar to relative position in that you can give it directions to shift around but one really important thing to remember is that it removes it from the flow of the page. What does that mean? Take a look at the picture. The "main" section was told to {position: absolute; top: 0 right: 0}. Notice how the space that was occupied by the "main" section isn't there anymore. Absolute will take an element out of the flow and place it to the top left corner of it's parent element.</p>
 			<img class="image" src="images/absolute_position.png">
 			</div>
-			<div class="blog_entry">
-				<h3>Absolute Position to Relative Parent Element</h3>
+		</section>
+
+							<div class="blog_entry">
+			<h3>Absolute Position to Relative Parent Element</h3>
 			<p class="text">What was most confusing about the absolute position was how to use it.  Remember how the definition says it places it in the top left corner of the parent element? The first few times I tried it, it did exactly that but to the corner of my website. I scratched my head and couldn't figure out why! Turns out, the parent element has to have a relative position in order for the absolute element to stick to that specific corner. In the picture example, the "section"is set to {position: absolute; right:0} and it stuck to the top of the parent element, "main," instead of the website. Isn't that amazing?</p>
 			<img class="image" src="images/absolute_to_parent_position.png">
 			</div>
 		</section>
+
+			<section id="allposts">
+			<h4>Other posts!</h4>
+			<ul id="posttitles">
+				<li><a href="week3_technical.html">JS: Past The Bells And Whistles.</a></li>
+				<li><a href="week3_cultural.html">Vulcan With A Dash Of OCD.</a></li>
+				<li><a href="gps1_1.html">Why Pairing?</a></li>
+				<li><a href="week2_technical">You Want It Where? CSS Positions.</a></li>
+				<li><a href="week1_technical">Website Review</a></li>
+				<li><a href="week1_cultural">Week 1... I survived</a></li>
+			</ul>
+		</section>
+
 		<footer>
 		</footer>
 	</body>
 </html>
+
