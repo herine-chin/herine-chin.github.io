@@ -64,21 +64,46 @@ ul{
 }
 
 ul li {
+    width: 20%;
     float: left;
     text-align: center;
-    width: 18%;
-    padding: 1% .5% 1% .5%;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    margin: .5% 0% 0% .75%;
-    background: #333333;
-    box-shadow: 0 0 .75em #000000
+    position: relative;
 }
 
 ul li a {
     font-size: 1em;
     color: #CACBCB;
     text-decoration: none;
+    width: 95%;
+    display: inline-block;
+    padding: 5% 0%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin: 2% 0 0 0;
+    background: #222222;
+    box-shadow: 0 0 .75em #000000
+}
+
+ul li #blog {
+    background: #444444;
+    color: #FFFFFF;
+}
+
+#hover {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+
+}
+#moreposts {
+    background: none;
+    border-radius: .5em;
+    box-shadow: none;
+    border: .125em dashed #9FD663;
+    padding: 2% 0;
+    margin: 1% auto;
+    font-size: .9em
 }
 
 #header_line {
@@ -94,9 +119,6 @@ ul li a {
 #cultural {}
 #misc {}
 
-#all_blogs {
-    display: none
-}
 
 .clear  {
     clear: both
@@ -132,8 +154,9 @@ section {
 }
 
 .blog_entry {
+    right: 0;
     padding-top: 2%;
-    width: 95%;
+    width: 96%;
     margin: 0 auto;
     border-bottom: .125em dashed #9FD663;
     border-left: .125em dashed #9FD663;
@@ -144,6 +167,7 @@ h3 {
     font-size: 1.25em;
     color: #9FD663
 }
+
 .text {
     padding: 0 2%;
     width: 38%;
@@ -159,32 +183,86 @@ h3 {
     vertical-align: top
 }
 
+
+
+#allposts {
+    width: 96%;
+    position: relative;
+    margin: 0 auto
+}
+
+h4 {
+    display: inline-block;
+    border-radius: .5em;
+    background: #9FD663;
+    margin: 1% auto auto 0;
+    font-size: 1em;
+    color: #FFFFFF;
+    padding: 1%;
+}
+
+#allposts li {
+    float: none;
+    padding: 1% 0 0 2%;
+    width: 100%
+}
+
+#allposts li a {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    text-align: left;
+}
+
 footer {
     margin-top: 2%;
     border-top: 2em solid #333333;
     box-shadow: 0 0 .75em #000000;
 }
-a#active { 
-    color: white; 
+
+ul li a:hover {
+    background: #444444;
+    color: #FFFFFF;
 }
+
+ul li #hover a:hover {
+    background: #9FD663
+}
+
+
 
 /* Narrow 720 */
 
 @media only screen and (max-width: 720px) {
 
-      ul li {
+    ul li {
         float: none;
         margin: 0;
-        width: 99%;
-        border-radius: 0;
-        padding: none;
-  }
-    #technical, #cultural, #misc, #header_line {
-        display: none;
+        width: 100%;
+        position: relative
   }
 
-    #all_blogs {
-        display: block
+  ul li a {
+    width: 100%;
+    margin: 0;
+    padding: 2% 0;
+    border-radius: 0
+  }
+
+ul li #moreposts {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    margin: 0 2% 1.5% 0;
+    padding: .5% 0;
+}
+
+    #header_line {
+        display: none;
   }
 
     #about{
@@ -216,7 +294,20 @@ a#active {
         width: 80%;
         margin: 1% auto;
     }
+    #allposts {
+    text-align: center;
+    width: 98%;
+    margin: 0
+    }
 
+    h4 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #posttitles li a {
+        text-align: center;
+    }
 }
 
 
