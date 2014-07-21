@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Herine Chin| Arrays vs. Hashes.</title>
+		<link href="blog_template.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<header>
+			<ul>
+				<li><a href="http://herine-chin.github.io/index">Home</a></li>
+				<li><a id="blog" href="#">Blog</a>
+					<ul>
+						<li id="hover"><a id="moreposts" href="#allposts">More posts</a></li> 
+					</ul>
+				</li>
+				<li><a href="mailto:herine.chin@gmail.com">Contact Me</a></li>
+			</ul>
+
+			<div>
+
+			</div>
+
+			<div id="header_line">
+			</div>
+				<div id="container">
+					<h1 id="blog_title">Arrays vs. Hashes</h1>
+					<h2 id="blog_date">July 20, 2014</h2>
+				</div>
+		</header>
+
+		<section>
+			<div class="blog_entry">
+			<h3>Arrays</h3>	
+			<p class="text">Arrays are basically a list of object and each object in an array is referred to as an element. These elements can consist of strings, integers, hashes, symbols, fixnum and even other arrays.  The elements are ordered and integer-indexed, meaning that each has a number to indicate its location in the array. An index of 0 refers the first object on the list, while an index of 1 refers to the second object, an index 2 for the third, etc. It's a bit confusing to start with 0 but that's how ruby and many computer programming languages roll.  A negative index like -1 refers to the last element in an array. </p>
+			<img class="image" src="images/array_examples.png">
+			</div>
+
+			<div class="blog_entry">
+			<h3>Hashes</h3>
+			<p class="text">Hashes are similar to arrays and are sometimes known as associative arrays, maps or dictionaries.  It is a list of objects but instead of an integer-indexed order, hashes allow you to tag a key object to a value object. It's like assigning a name to a thing and when you call on that name, it returns the associated thing. When you call on a key that doesn't exist in the hash, it returns a defaulted "nil" value. </p>
+			<img class="image" src="images/hash_examples.png">
+			</div>
+
+			<div class="blog_entry">
+			<h3>Subtitle</h3>
+			<p class="text">The biggest factor to consider when deciding between arrays and hash are whether the order of the elements matter.<br><br>Use an array...<br>If you need to maintain order. This is based on the listed order not sorted order.<br>If you need to access contents randomly by a number.<br>If you need to go through the contents linearly.<br><br>Use a hash...<br>If you have to retrieve values based on an identifier like names, addresses or age.<br>If you don't need things to be in order.<br>If you are going to be adding and removing elements and their keys.</p>
+			<img class="image" src="http://media-cache-ec0.pinimg.com/736x/b7/fa/7f/b7fa7f196948d01b35673cd757a8396e.jpg">
+			</div>
+		</section>
+
+			<section id="allposts">
+			<h4>Other posts!</h4>
+			<ul id="posttitles">
+				<li><a href="week4_technical.html">Arrays vs. Hashes</a></li>
+				<li><a href="week4_cultural.html">Why XY > XX?</a></li>
+				<li><a href="week3_technical.html">JS: Past The Bells And Whistles.</a></li>
+				<li><a href="week3_cultural.html">Vulcan With A Dash Of OCD.</a></li>
+				<li><a href="gps1_1.html">Why Pairing?</a></li>
+				<li><a href="week2_technical.html">You Want It Where? CSS Positions.</a></li>
+				<li><a href="week1_technical.html">Website Review</a></li>
+				<li><a href="week1_cultural.html">Week 1... I survived</a></li>
+			</ul>
+		</section>
+
+		<footer>
+		</footer>
+	</body>
+</html>
+
