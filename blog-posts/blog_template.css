@@ -165,14 +165,16 @@ section {
 h3 {
     padding: 0 0 1% 2%;
     font-size: 1.25em;
-    color: #9FD663
+    color: #9FD663;
 }
 
-.text {
+.text , .arch_text {
     padding: 0 2%;
+    margin-bottom: 1%;
     width: 38%;
     display: inline-block;
-    line-height: 1.25em
+    line-height: 1.25em;
+    color: black;
 }
 
 .image {
@@ -231,7 +233,37 @@ ul li #hover a:hover {
     background: #9FD663
 }
 
+/* Archive Specific */
 
+ul li #tech {
+    background: #444444;
+    color: #FFFFFF;
+}
+
+ul li #cultural {
+    background: #444444;
+    color: #FFFFFF;
+}
+
+.arch_links {
+    text-decoration: none;
+}
+
+.first_arch_image {
+    width: 17%;
+    height: auto;
+    box-shadow: 0 0 .75em #000000;
+    margin: 0 .5% 2% 0%;
+    vertical-align: top
+}
+
+.other_arch_image {
+    width: 17%;
+    height: auto;
+    box-shadow: 0 0 .75em #000000;
+    margin: 0 .5% 2% 0%;
+    vertical-align: top
+}
 
 /* Narrow 720 */
 
@@ -308,9 +340,32 @@ ul li #moreposts {
     #posttitles li a {
         text-align: center;
     }
+/* Archive Specific */
+    .arch_text {
+        width: 65%
+    }
+
+    .first_arch_image { 
+        width: 25%
+    }
+
+    .other_arch_image {
+        display: none
+    }
+
+
 }
 
+@media only screen and (max-width: 550px) {
+    .arch_text {
+        width: 98%
+    }
 
+    .first_arch_image {
+        display: none
+    }
+
+}
 
 
 
