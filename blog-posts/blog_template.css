@@ -224,6 +224,12 @@ footer {
     box-shadow: 0 0 .75em #000000;
 }
 
+.highlight {
+    background: #9FD663;
+    border-radius: .25em;
+    padding: 0 .25em 0 .25em;
+}
+
 ul li a:hover {
     background: #444444;
     color: #FFFFFF;
@@ -232,6 +238,8 @@ ul li a:hover {
 ul li #hover a:hover {
     background: #9FD663
 }
+
+
 
 /* Archive Specific */
 
