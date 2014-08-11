@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Herine Chin| SQL vs. NoSQL</title>
+		<link href="blog_template.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<header>
+			<ul>
+				<li><a href="http://herine-chin.github.io/index">Home</a></li>
+				<li><a href="tech_archive.html">Tech Blog</a></li>
+				<li><a href="cultural_archive.html">Cultural Blog</a></li>
+				<li><a href="mailto:herine.chin@gmail.com">Contact Me</a></li>
+			</ul>
+
+			<div id="header_line">
+			</div>
+				<div id="container">
+					<h1 id="blog_title">SQL vs. NoSQL</h1>
+					<h2 id="blog_date">August 10, 2014</h2>
+				</div>
+		</header>
+
+		<section>
+			<div class="blog_entry">
+			<h3>SQL</h3>	
+			<p class="text">When I mention SQL in this post, it's not specifically the language but the databases it's used to access, also called relational databases. This was introduced in the 1970s and uses a mathmatical approach to structuring data. It is a set of tables containing data that fits into predefined fields. Each table can have one or many data categories in the form of columns with each row representing a unique instance of data that correlates with the categories in the columns.<br><br>
+
+			PROs:<br>
+			Relational databases can be queried with a standard query language like SQL. It is more reliable and has more support due to it's age and open source nature.<br><br>
+
+			CONs:<br> 
+			The JOIN operation can slow systems down when there are many users (think millions) are doing lookups against tables with lots (think millions again) of data. In order to scale a relational database it has to be distributed across multiple servers and handling tables across different servers is chaos. If your data doesn't fit into tables easily then it requires you to design your database into a more complex structure to work.
+			</p>
+			<img class="image" src="http://angriestprogrammer.com/comics/sql_vaudeville.png">
+			</div>
+
+			<div class="blog_entry">
+			<h3>NoSQL</h3>
+			<p class="text">NoSQL is a newer type of non-relational database, also called structured storage database. It doesn't require a schema, avoids join operations and typically scales horizontally. There are three types of popular architecture; key-value, column-oriented and documentbased stores.<br><br>
+
+			PROS:<br>
+			Data can be inserted without defining database schemas which means the format can be changed without application disruption, adding to its flexibility. It can also spread data across multiple servers without application assistance. It can process data faster because data models are typically simpler.<br><br>
+
+			CONs:<br>
+			Due to its age, NoSQL has less support and a smaller community to rely on for help. It also lacks a standard querying language, like SQL, because each database can be implemented differently.
+			</p>
+			<img class="image" src="http://glennas.files.wordpress.com/2011/03/nosql-databases-facebook.png">
+			</div>
+
+			<div class="blog_entry">
+			<h3>What's next?</h3>
+			<p class="text">I look forward to working with NoSQL databases in the future. It doesn't mean I'm a proponent for it. I have some experience with relational database management and it would be great to learn from both sides. From my research it seems that NoSQL provides a type of flexibility needed in the modern age of projects but it's lacking the important standard language. I feel that NoSQL databases would take over relational databases once a querying langage has been achieved. 
+			</p>
+			<img class="image" src="http://micklr.com/wp-content/uploads/2013/11/SQL-noSQL.jpg">
+			</div>
+		</section>
+
+<!--			<section id="allposts">
+			<h4>Other posts!</h4>
+			<ul id="posttitles">
+				<li><a href="week5_technical.html">You Stay Classy, Developers!</a></li>
+				<li><a href="week5_cultural.html">50 First Dates</a></li>
+				<li><a href="week4_technical.html">Arrays vs. Hashes</a></li>
+				<li><a href="week4_cultural.html">Why XY > XX?</a></li>
+				<li><a href="week3_technical.html">JS: Past The Bells And Whistles.</a></li>
+				<li><a href="week3_cultural.html">Vulcan With A Dash Of OCD.</a></li>
+				<li><a href="gps1_1.html">Why Pairing?</a></li>
+				<li><a href="week2_technical.html">You Want It Where? CSS Positions.</a></li>
+				<li><a href="week1_technical.html">Website Review</a></li>
+				<li><a href="week1_cultural.html">Week 1... I survived</a></li>
+			</ul>
+		</section>
+-->
+		<footer>
+		</footer>
+	</body>
+</html>
