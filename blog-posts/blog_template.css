@@ -177,6 +177,16 @@ h3 {
     color: black;
 }
 
+.code {
+    padding: 0 0 2% 2%;
+}
+
+.code li {
+    width: 100%;
+    text-align: left;
+
+}
+
 .image {
     width: 57%;
     height: auto;
